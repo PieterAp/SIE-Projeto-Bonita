@@ -562,6 +562,9 @@
     <role name="Coordenador">
       <displayName>Coo</displayName>
     </role>
+    <role name="Consultores">
+      <displayName>CON</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -661,7 +664,7 @@
     </membership>
     <membership>
       <userName>thorsten.hartmann</userName>
-      <roleName>member</roleName>
+      <roleName>Consultores</roleName>
       <groupName>finance</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
