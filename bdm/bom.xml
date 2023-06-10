@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.FormacaoTest">
+            <fields>
+                <field type="STRING" length="255" name="testVar" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Produtivo">
+            <fields>
+                <field type="BOOLEAN" length="255" name="arranqueModulos" nullable="false" collection="false">
+                    <description>True: Arranque por módulos, False: Arranque normal </description>
+                </field>
+                <field type="TEXT" length="255" name="plano" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Projecto">
             <fields>
                 <field type="STRING" length="255" name="tipo" nullable="false" collection="false"/>
