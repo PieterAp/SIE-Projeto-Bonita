@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "newForm",
-  "name" : "newForm",
-  "lastUpdate" : 1686415286912,
+  "id" : "newForm21",
+  "name" : "newForm21",
+  "lastUpdate" : 1686416494168,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "a3df13b6-984c-4798-ac4d-2dd548f339ef",
+        "reference" : "76dc2a86-8be5-4691-b259-90683cf4d027",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "1bfb597c-17b9-4527-ba3c-62f5113b96e6",
+              "reference" : "bd3dd837-7af7-4e91-8dce-f9c673ae97cc",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f280d08b-0440-4b57-a92e-c1a8c2ba11bb",
+              "reference" : "dce7465f-59d0-43f6-9df5-5acf93cf8e3d",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d9e41fbb-a3a7-42bf-8e5e-26a6a1eec8b8",
+        "reference" : "18df146e-1e86-4fea-8c06-d8f6a18b47dc",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "2c3528da-9194-4b0e-a566-a8e1eee543d0",
+          "reference" : "14594efe-5749-4afe-98ea-9fbbc927a4ba",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -137,235 +137,47 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "hidden" : {
+                  "labelHidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "level" : {
+                  "hidden" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : false
                   },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "text" : {
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
                     "type" : "interpolation",
-                    "value" : "Projecto"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
+                    "value" : "Gestor de Projeto,  de acordo com a decisão do Cliente ?"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  }
-                },
-                "reference" : "62367e64-ffa4-4981-9f5e-abba858e59a5",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
                   },
-                  "hidden" : {
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.decisao_aceite2"
+                  },
+                  "required" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "cssClasses" : {
+                  "allowHTML" : {
                     "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
+                    "value" : false
                   }
                 },
-                "reference" : "12ac97f5-b53a-4656-8d8f-3b59c79711fa",
+                "reference" : "b07ea29a-2cb5-40ad-9f6f-367e7c77e667",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo de projecto"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "A",
-                            "B",
-                            "C",
-                            "Consultoria",
-                            "Upgrade",
-                            "Conceção e Desenvolvimento",
-                            "Implementação e Prototipagem"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "projecto.tipo"
-                        }
-                      },
-                      "reference" : "76cf3e47-5795-40c3-ada8-9054ed0e341d",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!projecto.reuniao_de_passagem"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Reuniao_de_passagem"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "projecto.reuniao_de_passagem"
-                        }
-                      },
-                      "reference" : "72fac56f-0c5f-41c0-9a2f-30c6071d0326",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!projecto.requisitos_estabelecidos"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Requisitos_estabelecidos"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "projecto.requisitos_estabelecidos"
-                        }
-                      },
-                      "reference" : "1b584d19-3872-413f-9b93-5fb49282ce2a",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbCheckbox",
+                "description" : ""
               }
             ],
             [
@@ -443,7 +255,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "0b80303a-1cc9-43da-8051-a1e2a389391b",
+                "reference" : "ef09b8cd-1fc7-475b-868f-6496d22ff948",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -495,7 +307,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "202b3c47-cf6b-4826-a751-b2e996ddaae4",
+                "reference" : "5f712a77-e8fe-4ce4-83fa-c8c8f170b4fb",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -508,16 +320,16 @@
   ],
   "assets" : [
     {
-      "id" : "bb2515db-0f25-47d6-9d82-f60808144318",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "c8d3b207-111c-4633-90d1-d22874ac5d3a",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "2f4ccb28-7978-444d-9592-f1ffee3390ab",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "f8708692-88f8-46af-9ec6-0fc6fe2cd138",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -528,6 +340,15 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"decisao_aceite2\" : false\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -549,13 +370,8 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.projecto ){",
-        "\treturn {",
-        "\t\t//map projecto variable to expected task contract input",
-        "\t\tprojectoInput: {",
-        "\t\t\ttipo: $data.projecto.tipo !== undefined ? $data.projecto.tipo : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tdecisao_aceite2: $data.formInput.decisao_aceite2",
         "}"
       ],
       "exposed" : false
@@ -573,17 +389,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "projecto" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.projecto_ref.link}}"
-      ],
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "69817b7b-fade-47eb-8f91-235bb018fd0f",
+  "uuid" : "e6318fb1-4d12-4da5-8c9d-f0ace733178b",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

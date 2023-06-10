@@ -565,6 +565,12 @@
     <role name="Consultores">
       <displayName>CON</displayName>
     </role>
+    <role name="Gestor de Implementação">
+      <displayName>GI</displayName>
+    </role>
+    <role name="Gestor de Projeto">
+      <displayName>GP</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -652,7 +658,7 @@
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
-      <roleName>member</roleName>
+      <roleName>Gestor de Projeto</roleName>
       <groupName>finance</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
@@ -712,7 +718,7 @@
     </membership>
     <membership>
       <userName>thomas.wallis</userName>
-      <roleName>member</roleName>
+      <roleName>Gestor de Implementação</roleName>
       <groupName>services</groupName>
       <groupParentPath>/acme/production</groupParentPath>
     </membership>
