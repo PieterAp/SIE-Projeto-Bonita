@@ -84,7 +84,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_VrmoB_7vEe2kSK97eL1Bxw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_VrmoBv7vEe2kSK97eL1Bxw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_VrmoCf7vEe2kSK97eL1Bxw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_jsMREP7zEe2kSK97eL1Bxw" name="newForm" content="69817b7b-fade-47eb-8f91-235bb018fd0f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_RvGOcAhsEe6Ol5bqRTdhCg" name="newForm18" content="c756fbd7-3c39-48b3-a9a3-af2be8f36940" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_VrmoCP7vEe2kSK97eL1Bxw">
             <inputs xmi:type="process:ContractInput" xmi:id="_8hOGYP7yEe2kSK97eL1Bxw" name="projectoInput" type="COMPLEX" dataReference="projecto" createMode="false">
