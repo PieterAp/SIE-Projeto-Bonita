@@ -23,6 +23,8 @@
                 <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="gestorImplementacao" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="recursosProjeto" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="coordenador" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="gestorProjeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

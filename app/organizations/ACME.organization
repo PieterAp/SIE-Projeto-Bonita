@@ -568,7 +568,7 @@
     <role name="gestorimplementacao">
       <displayName>GI</displayName>
     </role>
-    <role name="Gestor de Projeto">
+    <role name="gestordeprojeto">
       <displayName>GP</displayName>
     </role>
   </roles>
@@ -646,7 +646,7 @@
     </membership>
     <membership>
       <userName>walter.bates</userName>
-      <roleName>Gestor de Projeto</roleName>
+      <roleName>gestordeprojeto</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
@@ -658,7 +658,7 @@
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
-      <roleName>Gestor de Projeto</roleName>
+      <roleName>gestordeprojeto</roleName>
       <groupName>finance</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>

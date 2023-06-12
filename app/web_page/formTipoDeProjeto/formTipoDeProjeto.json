@@ -1,10 +1,10 @@
 {
-  "id" : "newForm18",
-  "name" : "newForm18",
+  "id" : "formTipoDeProjeto",
+  "name" : "formTipoDeProjeto",
   "type" : "form",
   "uuid" : "c756fbd7-3c39-48b3-a9a3-af2be8f36940",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686500763052,
+  "lastUpdate" : 1686594233791,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -211,27 +211,27 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "labelWidth" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -239,30 +239,43 @@
                           "type" : "interpolation",
                           "value" : "Tipo"
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "A",
+                            "B",
+                            "C",
+                            "Consultoria",
+                            "Upgrade",
+                            "Conceção e Desenvolvimento",
+                            "Implementação e Prototipagem"
+                          ]
+                        },
+                        "displayedKey" : {
                           "type" : "constant"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "projecto.tipo"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "0edf2d04-d1e3-4080-85da-4a46901448ee",
+                      "reference" : "2c20ea8c-476e-431e-a0c7-d7003cd59877",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
