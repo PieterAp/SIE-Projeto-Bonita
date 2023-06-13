@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_T8Y50AmHEe6loP0AHmYpgQ" name="convocatoria-reuniao" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_T8Y50QmHEe6loP0AHmYpgQ" name="Convocatoria de reuniao">
-      <elements xmi:type="process:Lane" xmi:id="_T8Y50gmHEe6loP0AHmYpgQ" name="Gestor de projeto" actor="_T8Y56wmHEe6loP0AHmYpgQ">
+      <elements xmi:type="process:Lane" xmi:id="_T8Y50gmHEe6loP0AHmYpgQ" name="Gestor de projeto" actor="_swOmcAoBEe6ig6VsTwrLyw">
         <elements xmi:type="process:StartEvent" xmi:id="_T8Y50wmHEe6loP0AHmYpgQ" name="start" outgoing="_T8Y56AmHEe6loP0AHmYpgQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_T8Y51AmHEe6loP0AHmYpgQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_T8Y51QmHEe6loP0AHmYpgQ" name="" content="" returnTypeFixed="true"/>
@@ -25,7 +25,19 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_bXyUYwmHEe6loP0AHmYpgQ" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_dahoMAmHEe6loP0AHmYpgQ" text="Divulgaçao prévia da agenda, local de realizaçao hora de inicio e duraçao"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_yiuJgAoBEe6ig6VsTwrLyw" name="gestorProjeto" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_yiuJgQoBEe6ig6VsTwrLyw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_yiuJggoBEe6ig6VsTwrLyw" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_yiuJgwoBEe6ig6VsTwrLyw" name="userId()" content="projeto.gestorProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3N5fMAoBEe6ig6VsTwrLyw" name="projeto" dataType="_T8Y6BAmHEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+              </expression>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_0ZrrIAoBEe6ig6VsTwrLyw" name="projeto" dataType="_T8Y6BAmHEe6loP0AHmYpgQ" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_0ZrrIQoBEe6ig6VsTwrLyw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_T8Y55AmHEe6loP0AHmYpgQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_T8Y55QmHEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -40,7 +52,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_bmxyoQmHEe6loP0AHmYpgQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_bmxyogmHEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_T8Y56wmHEe6loP0AHmYpgQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_swOmcAoBEe6ig6VsTwrLyw" name="Gestor de Projeto"/>
       <contract xmi:type="process:Contract" xmi:id="_T8Y57AmHEe6loP0AHmYpgQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_T8Y57QmHEe6loP0AHmYpgQ">
         <name xmi:type="expression:Expression" xmi:id="_T8Y57gmHEe6loP0AHmYpgQ" content="" returnTypeFixed="true"/>

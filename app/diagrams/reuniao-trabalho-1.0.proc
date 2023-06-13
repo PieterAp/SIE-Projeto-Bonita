@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0SHn3gmDEe6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0SHn3wmDEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_0SHn4AmDEe6loP0AHmYpgQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_0SHn4QmDEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_cfrJEAoBEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_0SHn4gmDEe6loP0AHmYpgQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_0SHn4wmDEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -65,7 +65,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_DVvYBgmEEe6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_DVvYBQmEEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_WhPjmgmEEe6loP0AHmYpgQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_WhPjmwmEEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_cfrJEQoBEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_WhPjmQmEEe6loP0AHmYpgQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_WhPjnAmEEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -127,7 +127,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_GcsFYQmFEe6loP0AHmYpgQ" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_0SHn5AmDEe6loP0AHmYpgQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_0SHn5QmDEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_cfrJEgoBEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_0SHn5gmDEe6loP0AHmYpgQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_0SHn5wmDEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -150,24 +150,26 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Klh_gAmEEe6loP0AHmYpgQ" name="Tipo B ou C" target="_B6sg4AmFEe6loP0AHmYpgQ" source="_EhcWIAmEEe6loP0AHmYpgQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Klh_gQmEEe6loP0AHmYpgQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_Klh_ggmEEe6loP0AHmYpgQ" name="newScript()" content="projeto.tipo=&quot;B&quot;  ||  projeto.tipo=&quot;C&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_Klh_ggmEEe6loP0AHmYpgQ" name="newScript()" content="projeto.tipo==&quot;B&quot;  ||  projeto.tipo==&quot;C&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_czM-gAoAEe6ig6VsTwrLyw" name="projeto" dataType="_0SHoBAmDEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_LoppYAmEEe6loP0AHmYpgQ" name="Nao" target="_W6d74AmEEe6loP0AHmYpgQ" source="_E6DqcAmEEe6loP0AHmYpgQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_LoppYQmEEe6loP0AHmYpgQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_LoppYgmEEe6loP0AHmYpgQ" name="newScript()" content="enviarEmailReuniao.value=false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_TFxFwAmFEe6loP0AHmYpgQ" name="enviarEmailReuniao" dataType="_0SHn_AmDEe6loP0AHmYpgQ"/>
+        <condition xmi:type="expression:Expression" xmi:id="_LoppYgmEEe6loP0AHmYpgQ" name="newScript()" content="enviarEmailReuniao.value==false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_dtD-sAoAEe6ig6VsTwrLyw" name="enviarEmailReuniao" dataType="_0SHn_AmDEe6loP0AHmYpgQ"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_MZ0noAmEEe6loP0AHmYpgQ" name="Sim" target="_GInvUAmEEe6loP0AHmYpgQ" source="_E6DqcAmEEe6loP0AHmYpgQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MZ0noQmEEe6loP0AHmYpgQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_MZ0nogmEEe6loP0AHmYpgQ" name="newScript()" content="enviarEmailReuniao.value=true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_SLHbYAmFEe6loP0AHmYpgQ" name="enviarEmailReuniao" dataType="_0SHn_AmDEe6loP0AHmYpgQ"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MZ0nogmEEe6loP0AHmYpgQ" name="newScript()" content="enviarEmailReuniao.value==true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_etXlIAoAEe6ig6VsTwrLyw" name="enviarEmailReuniao" dataType="_0SHn_AmDEe6loP0AHmYpgQ"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_NUzpMAmEEe6loP0AHmYpgQ" name="Tipo A" target="_GInvUAmEEe6loP0AHmYpgQ" source="_EhcWIAmEEe6loP0AHmYpgQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_NUzpMQmEEe6loP0AHmYpgQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_NUzpMgmEEe6loP0AHmYpgQ" name="newScript()" content="projeto.tipo=&quot;A&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3kgJIAmEEe6loP0AHmYpgQ" name="projeto" dataType="_0SHoBAmDEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+        <condition xmi:type="expression:Expression" xmi:id="_NUzpMgmEEe6loP0AHmYpgQ" name="newScript()" content="projeto.tipo==&quot;A&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_aw9Z8AoAEe6ig6VsTwrLyw" name="projeto" dataType="_0SHoBAmDEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_NjflcAmEEe6loP0AHmYpgQ" target="_Iphl0AmEEe6loP0AHmYpgQ" source="_GInvUAmEEe6loP0AHmYpgQ">
@@ -182,7 +184,6 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_9S-H0QmEEe6loP0AHmYpgQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_9S-H0gmEEe6loP0AHmYpgQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_0SHn6wmDEe6loP0AHmYpgQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
       <actors xmi:type="process:Actor" xmi:id="_8ymbIAmDEe6loP0AHmYpgQ" name="Gestor de Projeto" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_0SHn7AmDEe6loP0AHmYpgQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_0SHn7QmDEe6loP0AHmYpgQ">

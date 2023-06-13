@@ -701,8 +701,8 @@
         <filters xmi:type="process:ActorFilter" xmi:id="_TPJ3oAlLEe6Gh7ALxbGUbw" name="gestorProjetoImplementacao" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
           <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_TPJ3oQlLEe6Gh7ALxbGUbw" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TPJ3oglLEe6Gh7ALxbGUbw" key="userId">
-              <expression xmi:type="expression:Expression" xmi:id="_TPJ3owlLEe6Gh7ALxbGUbw" name="userId()" content="projectoDAO.findByGestorProjeto(gestorProjeto, startIndex, maxResults)  &#xD;&#xA;||&#xD;&#xA; projectoDAO.findByGestorImplementacao(gestorImplementacao, startIndex, maxResults)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
-                <referencedElements xmi:type="expression:Expression" xmi:id="_TPJ3pAlLEe6Gh7ALxbGUbw" name="projectoDAO" content="projectoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProjectoDAO" returnTypeFixed="true"/>
+              <expression xmi:type="expression:Expression" xmi:id="_TPJ3owlLEe6Gh7ALxbGUbw" name="userId()" content="projeto.gestorProjeto  ||  projeto.gestorImplementacao" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x-jXYAn_Ee6ig6VsTwrLyw" name="projeto" dataType="_OH95awR_Ee6cr4Cj63CbyQ" className="com.company.model.Projecto"/>
               </expression>
             </parameters>
           </configuration>
@@ -710,6 +710,9 @@
       </elements>
       <data xmi:type="process:Data" xmi:id="_7SzAkAenEe6YQvcFItnB7A" name="decisao_aceite" dataType="_OH95YwR_Ee6cr4Cj63CbyQ">
         <defaultValue xmi:type="expression:Expression" xmi:id="_7SzAkQenEe6YQvcFItnB7A" content="" returnType="java.lang.Boolean"/>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_gRzBwAn_Ee6ig6VsTwrLyw" name="projeto" dataType="_OH95awR_Ee6cr4Cj63CbyQ" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_gRzBwQn_Ee6ig6VsTwrLyw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_OKKR0AR_Ee6cr4Cj63CbyQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_DwCq8QeuEe6YQvcFItnB7A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

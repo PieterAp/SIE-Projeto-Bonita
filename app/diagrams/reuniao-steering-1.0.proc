@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_vjwJXgmFEe6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_vjwJXwmFEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_vjwJYAmFEe6loP0AHmYpgQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_vjwJYQmFEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_I8avYAoCEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_vjwJYgmFEe6loP0AHmYpgQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_vjwJYwmFEe6loP0AHmYpgQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -94,8 +94,8 @@
         <filters xmi:type="process:ActorFilter" xmi:id="_5ZopUAmFEe6loP0AHmYpgQ" name="gestorProjeto" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
           <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_5ZopUQmFEe6loP0AHmYpgQ" definitionId="bonita-actorfilter-single-user" version="1.0.0">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_5ZopUgmFEe6loP0AHmYpgQ" key="userId">
-              <expression xmi:type="expression:Expression" xmi:id="_5ZopUwmFEe6loP0AHmYpgQ" name="userId()" content="projectoDAO.findByGestorProjeto(gestorProjeto, startIndex, maxResults)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
-                <referencedElements xmi:type="expression:Expression" xmi:id="_5ZopVAmFEe6loP0AHmYpgQ" name="projectoDAO" content="projectoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProjectoDAO" returnTypeFixed="true"/>
+              <expression xmi:type="expression:Expression" xmi:id="_5ZopUwmFEe6loP0AHmYpgQ" name="userId()" content="projeto.gestorProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_860lwAoBEe6ig6VsTwrLyw" name="projeto" dataType="_vjwJhAmFEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
               </expression>
             </parameters>
           </configuration>
@@ -104,8 +104,11 @@
       <data xmi:type="process:Data" xmi:id="_tyH-MAmGEe6loP0AHmYpgQ" name="documentoAceite" dataType="_vjwJfAmFEe6loP0AHmYpgQ">
         <defaultValue xmi:type="expression:Expression" xmi:id="_tyH-MQmGEe6loP0AHmYpgQ" content="" returnType="java.lang.Boolean"/>
       </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_6qrvIAoBEe6ig6VsTwrLyw" name="projeto" dataType="_vjwJhAmFEe6loP0AHmYpgQ" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_6qrvIQoBEe6ig6VsTwrLyw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_vjwJZAmFEe6loP0AHmYpgQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_vjwJZQmFEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_I8avYQoCEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_vjwJZgmFEe6loP0AHmYpgQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_vjwJZwmFEe6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -138,7 +141,6 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_QdwsQQmGEe6loP0AHmYpgQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_QdwsQgmGEe6loP0AHmYpgQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_vjwJawmFEe6loP0AHmYpgQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
       <actors xmi:type="process:Actor" xmi:id="_3I4usAmFEe6loP0AHmYpgQ" name="Gestor de Projeto" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_vjwJbAmFEe6loP0AHmYpgQ"/>
       <documents xmi:type="process:Document" xmi:id="_muwpIAmGEe6loP0AHmYpgQ" name="documentoRequisitos">
