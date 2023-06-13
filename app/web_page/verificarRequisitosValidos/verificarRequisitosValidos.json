@@ -1,10 +1,10 @@
 {
-  "id" : "nomearCoordenadorGestorProjeto",
-  "name" : "nomearCoordenadorGestorProjeto",
+  "id" : "verificarRequisitosValidos",
+  "name" : "verificarRequisitosValidos",
   "type" : "form",
-  "uuid" : "f5e3b596-fd4a-4aea-acf0-22d676609d42",
+  "uuid" : "dc07f9ad-a596-4ec8-bda7-7cbd721bf487",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686687420762,
+  "lastUpdate" : 1686673393773,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d59c728e-42e2-4f6b-8aa8-8727f666e320",
+        "reference" : "d52b26c5-1c0e-4000-a441-de068964ff74",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a96f046b-5ada-430f-b1cd-369c14e57e2d",
+              "reference" : "c158d1d6-dac1-4683-a252-61678ee7062a",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "72f085c2-c2bd-48dc-b997-78b1802eb00c",
+              "reference" : "aaeb3196-8064-447b-9c0b-662074a54efc",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "95bc9ef4-656e-49b0-966d-813b3e5d1329",
+        "reference" : "05419d4b-144e-4b60-88e1-7dc1278c0396",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "0557db89-7992-458d-bd1e-47cfd8441e4a",
+          "reference" : "49810f7f-6d7c-423f-880a-bb32f0a0c37a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -134,218 +134,52 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
                   "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Projeto Input"
+                    "value" : "Verificar se os requisitos são adequados, completos, sem ambiguidades e sem conflitos entre si"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
                   }
                 },
-                "reference" : "f314a0e9-0cf4-4ed4-9e6d-35b8507bab39",
+                "reference" : "f2e7cf93-98b7-4e97-95cf-929d65710545",
                 "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "bd1d5011-f9c6-407c-a781-db597667b517",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Selecione o Coordenador"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Selecionar"
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "listCoordenadoresJSON"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "firstName+\" \"+lastName"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant",
-                          "value" : "id"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.projetoInput.coordenador"
-                        }
-                      },
-                      "reference" : "2b593d97-c97c-4707-ac84-d2b28c91e001",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Selecione o Gestor de projeto"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Selecionar"
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "listGestoresdeProjetoJSON"
-                        },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "firstName+\" \"+lastName"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant",
-                          "value" : "id"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.projetoInput.gestordeprojeto"
-                        }
-                      },
-                      "reference" : "efa5cd75-d1eb-49ee-8a0b-6b6dc5b34aa1",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect"
-                    }
-                  ]
-                ]
+                "id" : "pbText"
               }
             ],
             [
@@ -371,11 +205,11 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Execute"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -421,9 +255,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "da0e874e-7543-466e-ac5c-38790b573f6b",
+                "reference" : "87f5a709-261f-4692-a0e4-c5818e6a7563",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -475,7 +330,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7cc2d2cc-b45e-4086-98a1-d4cdaa39e6dc",
+                "reference" : "5d0385c9-3c6d-4ca8-acbc-9a490a481c79",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -491,18 +346,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"projetoInput\" : {\r",
-        "    \"coordenador\" : \"\",\r",
-        "    \"gestordeprojeto\" : \"\"\r",
-        "  }\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -525,7 +368,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tprojetoInput: $data.formInput.projetoInput",
+        "",
         "}"
       ],
       "exposed" : false
@@ -543,46 +386,18 @@
         "id"
       ],
       "exposed" : false
-    },
-    "listCoordenadores" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/caseVariable/{{task.parentCaseId}}/listCoordenadores"
-      ],
-      "exposed" : false
-    },
-    "listCoordenadoresJSON" : {
-      "type" : "expression",
-      "value" : [
-        "return JSON.parse($data.listCoordenadores.value);"
-      ],
-      "exposed" : false
-    },
-    "listGestoresdeProjeto" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/caseVariable/{{task.parentCaseId}}/listGestoresdeProjeto"
-      ],
-      "exposed" : false
-    },
-    "listGestoresdeProjetoJSON" : {
-      "type" : "expression",
-      "value" : [
-        "return JSON.parse($data.listGestoresdeProjeto.value);"
-      ],
-      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "7ac20dde-942b-4dad-b4f2-69abd75c54c8",
+      "id" : "904c1a89-6606-437c-a47f-5d603751ceaf",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "2b64dc87-befc-4569-b71f-720e5c133348",
+      "id" : "fc336c04-9ac3-45b7-9458-0e2e0192d01f",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

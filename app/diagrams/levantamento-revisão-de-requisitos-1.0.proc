@@ -188,10 +188,12 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_R06wCAnUEe6QHdyH_TUk5Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_R06wBwnUEe6QHdyH_TUk5Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_RiX4YAndEe6QHdyH_TUk5Q" name="initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_RiX4YQndEe6QHdyH_TUk5Q" definitionId="bonita-actorfilter-initiator" version="1.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_RiX4YgndEe6QHdyH_TUk5Q" key="autoAssign">
-              <expression xmi:type="expression:Expression" xmi:id="_RiX4YwndEe6QHdyH_TUk5Q" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_uVDZwAoCEe6ig6VsTwrLyw" name="gestorProjeto" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_uVDZwQoCEe6ig6VsTwrLyw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_uVDZwgoCEe6ig6VsTwrLyw" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_uVDZwwoCEe6ig6VsTwrLyw" name="userId()" content="projeto.gestorProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uVDZxAoCEe6ig6VsTwrLyw" name="projeto" dataType="_RxVQggnUEe6QHdyH_TUk5Q" className="com.company.model.Projecto"/>
+              </expression>
             </parameters>
           </configuration>
         </filters>
@@ -239,11 +241,23 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_R1W04gnUEe6QHdyH_TUk5Q" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_R2lj8AnUEe6QHdyH_TUk5Q" text="Desenho do Sistema de informação (DSI) ou Documento Requisitos"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_xI7PkAoCEe6ig6VsTwrLyw" name="gestorImplementacao" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_xI7PkQoCEe6ig6VsTwrLyw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_xI7PkgoCEe6ig6VsTwrLyw" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_xI7PkwoCEe6ig6VsTwrLyw" name="userId()" content="projeto.gestorImplementacao" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xI7PlAoCEe6ig6VsTwrLyw" name="projeto" dataType="_RxVQggnUEe6QHdyH_TUk5Q" className="com.company.model.Projecto"/>
+              </expression>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_UIbY0AnWEe6QHdyH_TUk5Q" name="requisitos" dataType="_RxVQggnUEe6QHdyH_TUk5Q" className="com.company.model.Requisitos">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ggUFFAniEe6uL7odmVYywA" name="initRequisitos()" content="def requisitosVar = new com.company.model.Requisitos()&#xA;requisitosVar.requisitos = requisitosInput?.requisitos&#xA;requisitosVar.validacaoRequisitos = requisitosInput?.validacaoRequisitos&#xA;return requisitosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Requisitos">
           <referencedElements xmi:type="process:ContractInput" xmi:id="_ggUFFQniEe6uL7odmVYywA" name="requisitosInput" type="COMPLEX"/>
         </defaultValue>
+      </data>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_oiWbUAoCEe6ig6VsTwrLyw" name="projeto" dataType="_RxVQggnUEe6QHdyH_TUk5Q" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_oiWbUQoCEe6ig6VsTwrLyw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_RzsA_wnUEe6QHdyH_TUk5Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_3XrB4AnjEe6uL7odmVYywA" name="requisitosStartForm" content="21ee4391-e5f7-46bb-86c8-98e6a6bb98a6" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

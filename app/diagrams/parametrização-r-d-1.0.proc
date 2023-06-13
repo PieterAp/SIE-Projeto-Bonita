@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_tDz4wAR6Ee6cr4Cj63CbyQ" name="parametrização-r-d" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_tELsMAR6Ee6cr4Cj63CbyQ" name="Parametrização">
       <elements xmi:type="process:Lane" xmi:id="_tIHxAAR6Ee6cr4Cj63CbyQ" name="Consultores" actor="_A8UUQAR7Ee6cr4Cj63CbyQ">
@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_tIQ69AR6Ee6cr4Cj63CbyQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_tIQ68wR6Ee6cr4Cj63CbyQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_tIQ69gR6Ee6cr4Cj63CbyQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_4jVTQAR-Ee6cr4Cj63CbyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_EtOgMAoEEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_tIQ69QR6Ee6cr4Cj63CbyQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_tIQ6-AR6Ee6cr4Cj63CbyQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -66,9 +66,19 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_tIWagwR6Ee6cr4Cj63CbyQ" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_tIx4UAR6Ee6cr4Cj63CbyQ" text="Deste registo deve constar:&#xA;-Protótipo&#xA;-Matriz utilizadores e perfis&#xA;-Importação de dados aplicações antigas"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_C8Rf8AoEEe6ig6VsTwrLyw" name="consultor" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_C8Rf8QoEEe6ig6VsTwrLyw" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_C8Rf8goEEe6ig6VsTwrLyw" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_C8Rf8woEEe6ig6VsTwrLyw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_1rN5kAoDEe6ig6VsTwrLyw" name="projeto" dataType="_tD9CtgR6Ee6cr4Cj63CbyQ" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_1rN5kQoDEe6ig6VsTwrLyw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_tH8K0AR6Ee6cr4Cj63CbyQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_4jVTQQR-Ee6cr4Cj63CbyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_EtOgMQoEEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_tH8K0gR6Ee6cr4Cj63CbyQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_tH8K0wR6Ee6cr4Cj63CbyQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

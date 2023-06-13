@@ -5,7 +5,7 @@
   "uuid" : "993a5d57-394e-41e5-aa83-3eaf431515cb",
   "modelVersion" : "2.4",
   "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686589410942,
+  "lastUpdate" : 1686687558213,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -443,7 +443,7 @@
     "listUsers" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/caseVariable/{{task.caseId}}/listUsers"
+        "../API/bpm/caseVariable/{{task.parentCaseId}}/listUsers"
       ],
       "exposed" : false
     },
