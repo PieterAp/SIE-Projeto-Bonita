@@ -2,12 +2,114 @@
   "id" : "registerPlanForm",
   "name" : "registerPlanForm",
   "type" : "form",
-  "uuid" : "8d3b7faf-bddf-4c43-976c-06a7d63dd9ff",
+  "uuid" : "f1280f7b-6566-4dfc-a4c4-d7b540b16209",
   "modelVersion" : "2.4",
-  "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686409393883,
+  "lastUpdate" : 1686654789732,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "ae6d8ecf-0202-4ea8-9a24-287694eb89ec",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "dc64a5e3-8909-4545-baa4-ff259e996d71",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "ea5eb2da-7726-4723-8339-a79672492f3f",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -15,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "18a10d7d-25ff-48f2-a0e7-e1c07e556c2e",
+        "reference" : "0adc889f-e802-4a9d-af68-822883367f85",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -24,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "84c22567-767d-4d47-b427-e17767210b2c",
+          "reference" : "79db3767-f374-41cf-9eb0-35f1dd74b978",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -38,132 +140,84 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "level" : {
+                  "labelPosition" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "top"
                   },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "text" : {
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
                     "type" : "interpolation",
-                    "value" : "Produtivo"
+                    "value" : "Plano Projeto"
                   },
-                  "alignment" : {
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "text"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  }
-                },
-                "reference" : "f7af5211-11fd-432f-80f2-67c41896c30e",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
                   },
-                  "hidden" : {
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.planoProjetoInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "cssClasses" : {
+                  "minLength" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "dimension" : {
+                  "maxLength" : {
                     "type" : "constant",
-                    "value" : 12
+                    "value" : ""
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
                   }
                 },
-                "reference" : "84b04a2f-6a0e-4f89-8b3a-7989472084e2",
+                "reference" : "63de49bf-a9dc-4b06-950e-948e61c834bd",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Plano"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : ""
-                        }
-                      },
-                      "reference" : "2381c8ea-755a-4a3a-8a47-34348bd77c3b",
-                      "hasValidationError" : false,
-                      "id" : "pbTextarea"
-                    }
-                  ]
-                ]
+                "id" : "pbInput",
+                "description" : ""
               }
             ],
             [
@@ -220,7 +274,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -241,7 +295,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4d13b36a-94a1-45b6-8a69-44411fafadec",
+                "reference" : "e0ea817a-b869-453a-8ea8-4dbb22c5db40",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -293,7 +347,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3c52f51c-2e26-4629-bea1-f862aa59e132",
+                "reference" : "7410eaee-7982-44d0-928b-ad8593389b6a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -305,13 +359,18 @@
     ]
   ],
   "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
     "formInput" : {
       "type" : "json",
       "value" : [
         "{",
-        "  \"produtivoInput\" : {",
-        "    \"arranqueModulos\" : false",
-        "  }",
+        "  \"planoProjetoInput\" : \"\"",
         "}"
       ],
       "exposed" : false
@@ -335,22 +394,36 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tprodutivoInput: $data.formInput.produtivoInput",
+        "\tplanoProjetoInput: $data.formInput.planoProjetoInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "957a91a3-b8f3-43a4-927e-02250a205d8a",
+      "id" : "5622dc3e-892b-4e37-bb11-20158d9992ad",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b953d103-8ba2-4ba0-8709-c9d690886c27",
+      "id" : "13b35204-f193-41e4-b8f9-ef4ef3757529",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
