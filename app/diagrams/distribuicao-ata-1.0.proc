@@ -31,13 +31,16 @@
         <filters xmi:type="process:ActorFilter" xmi:id="_e9PqEAmFEe6loP0AHmYpgQ" name="gestorProjeto" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
           <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_e9PqEQmFEe6loP0AHmYpgQ" definitionId="bonita-actorfilter-single-user" version="1.0.0">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_e9PqEgmFEe6loP0AHmYpgQ" key="userId">
-              <expression xmi:type="expression:Expression" xmi:id="_e9PqEwmFEe6loP0AHmYpgQ" name="userId()" content="projectoDAO.findByGestorProjeto(gestorProjeto, startIndex, maxResults)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
-                <referencedElements xmi:type="expression:Expression" xmi:id="_e9PqFAmFEe6loP0AHmYpgQ" name="projectoDAO" content="projectoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ProjectoDAO" returnTypeFixed="true"/>
+              <expression xmi:type="expression:Expression" xmi:id="_e9PqEwmFEe6loP0AHmYpgQ" name="userId()" content="projeto.gestorProjeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y_wKUAouEe6Dcrqzid1-og" name="projeto" dataType="_VjcpVAmFEe6loP0AHmYpgQ" className="com.company.model.Projecto"/>
               </expression>
             </parameters>
           </configuration>
         </filters>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_wrpZsAouEe6Dcrqzid1-og" name="projeto" dataType="_VjcpVAmFEe6loP0AHmYpgQ" className="com.company.model.Projecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_wrpZsQouEe6Dcrqzid1-og" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_VjcpNAmFEe6loP0AHmYpgQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_jteMgQoBEe6ig6VsTwrLyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>

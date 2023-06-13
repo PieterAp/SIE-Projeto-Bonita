@@ -17,6 +17,12 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_0FEoKAl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0FEoKgl0Ee6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0FEoKQl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_gEdacAotEe6Dcrqzid1-og" subprocessTarget="projecto" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_gEdacQotEe6Dcrqzid1-og" name="projeto" content="projeto" type="TYPE_VARIABLE" returnType="com.company.model.Projecto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gs9k4AotEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+            </processSource>
+          </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_iPvmQAotEe6Dcrqzid1-og" subprocessSource="projecto" processTarget="_bbzsAAl3Ee6loP0AHmYpgQ"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_0FEoJAl0Ee6loP0AHmYpgQ" name="Passagem" content="Passagem" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_0FEoJQl0Ee6loP0AHmYpgQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -154,6 +160,11 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_0F8x6Al0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0F8x6gl0Ee6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0F8x6Ql0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_M2svoAouEe6Dcrqzid1-og" subprocessTarget="" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_M2svoQouEe6Dcrqzid1-og" name="projeto" content="projeto" type="TYPE_VARIABLE" returnType="com.company.model.Projecto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NNwkwAouEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+            </processSource>
+          </inputMappings>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_0F8x5Al0Ee6loP0AHmYpgQ" name="Levantamento" content="Levantamento" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_0F8x5Ql0Ee6loP0AHmYpgQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -166,6 +177,12 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_0F_OKAl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0F_OKgl0Ee6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0F_OKQl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_8jKPsAotEe6Dcrqzid1-og" subprocessTarget="projeto" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_8jKPsQotEe6Dcrqzid1-og" name="projeto" content="projeto" type="TYPE_VARIABLE" returnType="com.company.model.Projecto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9BoUYAotEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+            </processSource>
+          </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_-gk-oAotEe6Dcrqzid1-og" subprocessSource="projeto" processTarget="_bbzsAAl3Ee6loP0AHmYpgQ"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_0F_OJAl0Ee6loP0AHmYpgQ" name="Arranque" content="Arranque" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_0F_OJQl0Ee6loP0AHmYpgQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -234,6 +251,12 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_0GQ6-Al0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0GQ6-gl0Ee6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0GQ6-Ql0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_JJ34kAouEe6Dcrqzid1-og" subprocessTarget="projeto" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_JJ34kQouEe6Dcrqzid1-og" name="projeto" content="projeto" type="TYPE_VARIABLE" returnType="com.company.model.Projecto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jhr7oAouEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+            </processSource>
+          </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_H_yrEAouEe6Dcrqzid1-og" subprocessSource="projeto" processTarget="_bbzsAAl3Ee6loP0AHmYpgQ"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_0GTXMAl0Ee6loP0AHmYpgQ" name="Reuniao de trabalho" content="Reuniao de trabalho"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_0GTXMQl0Ee6loP0AHmYpgQ" name="1.0" content="1.0"/>
         </elements>
@@ -246,6 +269,12 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_0GT-SAl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0GT-Sgl0Ee6loP0AHmYpgQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0GT-SQl0Ee6loP0AHmYpgQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_jk2_EAotEe6Dcrqzid1-og" subprocessTarget="projeto" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_jk2_EQotEe6Dcrqzid1-og" name="projeto" content="projeto" type="TYPE_VARIABLE" returnType="com.company.model.Projecto">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kAE7cAotEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+            </processSource>
+          </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_lDEpgAotEe6Dcrqzid1-og" subprocessSource="projeto" processTarget="_bbzsAAl3Ee6loP0AHmYpgQ"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_0GVzcAl0Ee6loP0AHmYpgQ" name="Reuniao de trabalho" content="Reuniao de trabalho"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_0GVzcQl0Ee6loP0AHmYpgQ" name="1.0" content="1.0"/>
         </elements>
@@ -442,7 +471,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_OXEtkQl7Ee6loP0AHmYpgQ" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_0E0wkAl0Ee6loP0AHmYpgQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_0TousAobEe6TUtWSU7jc5w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ryZBMAotEe6Dcrqzid1-og" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_0E0wkgl0Ee6loP0AHmYpgQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_0E0wkwl0Ee6loP0AHmYpgQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -582,7 +611,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_0O5SgAl0Ee6loP0AHmYpgQ" name="Sim" target="_0GQ68Al0Ee6loP0AHmYpgQ" source="_0F5ukAl0Ee6loP0AHmYpgQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_0O5SgQl0Ee6loP0AHmYpgQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_0O5Sggl0Ee6loP0AHmYpgQ" name="newScript()" content="projeto.tipo==&quot;Upgrade&quot;  || projeto.tipo==&quot;Consultoria&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fQ68YAl3Ee6loP0AHmYpgQ" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SuEysAouEe6Dcrqzid1-og" name="projeto" dataType="_0EQIygl0Ee6loP0AHmYpgQ" className="com.company.model.Projecto"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_0O7uwAl0Ee6loP0AHmYpgQ" target="_0F8x4Al0Ee6loP0AHmYpgQ" source="_0GQ68Al0Ee6loP0AHmYpgQ">
@@ -811,7 +840,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_0GT-Swl0Ee6loP0AHmYpgQ" type="3063" element="_0GT-QAl0Ee6loP0AHmYpgQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_0GUlUAl0Ee6loP0AHmYpgQ" type="5093"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0GT-TAl0Ee6loP0AHmYpgQ" x="310" y="285"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0GT-TAl0Ee6loP0AHmYpgQ" x="310" y="285" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_0GXBkAl0Ee6loP0AHmYpgQ" type="3063" element="_0GWagAl0Ee6loP0AHmYpgQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_0GXBkgl0Ee6loP0AHmYpgQ" type="5093"/>
