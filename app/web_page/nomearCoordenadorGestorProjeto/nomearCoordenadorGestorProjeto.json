@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "f5e3b596-fd4a-4aea-acf0-22d676609d42",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686596225662,
+  "lastUpdate" : 1686687420762,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -547,7 +547,7 @@
     "listCoordenadores" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/caseVariable/{{task.caseId}}/listCoordenadores"
+        "../API/bpm/caseVariable/{{task.parentCaseId}}/listCoordenadores"
       ],
       "exposed" : false
     },
@@ -561,7 +561,7 @@
     "listGestoresdeProjeto" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/caseVariable/{{task.caseId}}/listGestoresdeProjeto"
+        "../API/bpm/caseVariable/{{task.parentCaseId}}/listGestoresdeProjeto"
       ],
       "exposed" : false
     },
