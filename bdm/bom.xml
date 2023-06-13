@@ -25,6 +25,7 @@
                 <field type="TEXT" length="255" name="recursosProjeto" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="coordenador" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="gestorProjeto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aprovacaoPlanoTestes" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

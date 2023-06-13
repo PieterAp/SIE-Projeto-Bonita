@@ -35,7 +35,3 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     z-index: 9999;
 }
 
-
-#pbTextArea0-input{
-    min-height: 150px;
-}

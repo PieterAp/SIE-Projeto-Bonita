@@ -571,6 +571,9 @@
     <role name="gestordeprojeto">
       <displayName>GP</displayName>
     </role>
+    <role name="Client">
+      <displayName>Client</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -676,7 +679,7 @@
     </membership>
     <membership>
       <userName>jan.fisher</userName>
-      <roleName>member</roleName>
+      <roleName>Client</roleName>
       <groupName>it</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
