@@ -1,10 +1,10 @@
 {
-  "id" : "newForm26",
-  "name" : "newForm26",
+  "id" : "realAtivFORM",
+  "name" : "realAtivFORM",
   "type" : "form",
-  "uuid" : "90855cb1-a9a0-479c-ae6e-54f1b9baecf8",
+  "uuid" : "202de864-2265-45b0-8510-70ac0d024ead",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686662517132,
+  "lastUpdate" : 1686672491571,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "7d3165e9-8fe4-45ad-b3cb-d94a7e3ecf4f",
+        "reference" : "45ff3918-a033-413a-868e-730577f5f9ba",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "8b8b9a86-1729-4e96-a892-986ee0012c8c",
+              "reference" : "0c16c1c8-3144-4b67-872a-6607c5995f0a",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a24b3a4c-405d-48f1-9dbf-4cebf7254c77",
+              "reference" : "2710e710-3a6d-4b66-9fbf-af87a9ca9105",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8b5306a4-46c0-4b83-94f6-2911dab65819",
+        "reference" : "85eb16e2-2386-4109-a53c-815905a5688f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,13 +126,65 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "8ad24231-0048-44cc-99d0-15dc73c70f2a",
+          "reference" : "2d254d7f-1254-4f36-b166-501d3625a398",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "container",
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "É necessário a determinação de atividades de concepção e desenvolvimento?"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "4507a762-d322-4264-becc-741e8fa09515",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -140,8 +192,9 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -151,77 +204,35 @@
                     "type" : "constant",
                     "value" : ""
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Sim"
+                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.realAtiv"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
-                "reference" : "3ead1e48-c6cd-4c3b-b4d1-1bde699b35c2",
+                "reference" : "1d4b95ca-da88-40d3-b456-998ed80beab1",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Ata Reuniao"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.ataReuniaoDocumentInput"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        }
-                      },
-                      "reference" : "33a45b10-6f82-462e-9d08-5fcebf6baaca",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbCheckbox",
+                "description" : ""
               }
             ],
             [
@@ -299,7 +310,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "45c6fde7-8880-48f7-b318-b1e0f3ef81be",
+                "reference" : "e3f915d4-32be-4b58-918a-91a1a1e0563a",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -351,7 +362,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e6e75d9c-ae3d-4bf8-8934-0c3925827061",
+                "reference" : "4569b662-98b1-41a2-a6df-ff415bd6ffa1",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -374,7 +385,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"ataReuniaoDocumentInput\" : null\r",
+        "  \"realAtiv\" : false\r",
         "}"
       ],
       "exposed" : false
@@ -398,7 +409,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tataReuniaoDocumentInput: $data.formInput.ataReuniaoDocumentInput",
+        "\trealAtiv: $data.formInput.realAtiv",
         "}"
       ],
       "exposed" : false
@@ -420,16 +431,16 @@
   },
   "assets" : [
     {
-      "id" : "068535db-1b88-44d5-8f9e-3a28d6da24aa",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "9ae06cc2-2511-40b1-9e5b-08821a267fce",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "a8447ecd-b153-4d3e-a3a8-b60fc4580c81",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "30faf2db-ab74-4d75-9b38-21f964666e25",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
