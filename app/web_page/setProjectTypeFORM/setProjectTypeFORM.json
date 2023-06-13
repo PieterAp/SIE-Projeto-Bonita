@@ -5,7 +5,7 @@
   "uuid" : "e6b06781-d076-4a96-972a-ef8a34956573",
   "modelVersion" : "2.4",
   "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686518130153,
+  "lastUpdate" : 1686667880918,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -256,7 +256,8 @@
                           "value" : [
                             "A",
                             "B",
-                            "C"
+                            "C",
+                            "D"
                           ]
                         },
                         "displayedKey" : {

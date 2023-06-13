@@ -1,11 +1,10 @@
 {
-  "id" : "recursosEmpresaFORM",
-  "name" : "recursosEmpresaFORM",
+  "id" : "DocPlanoTestes",
+  "name" : "DocPlanoTestes",
   "type" : "form",
-  "uuid" : "965cbba4-a5e8-43cc-8b37-7344ef58aee0",
+  "uuid" : "58d2a112-90a1-417d-8ff1-69c235731d0f",
   "modelVersion" : "2.4",
-  "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686658781758,
+  "lastUpdate" : 1686656247476,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -15,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6b3486a8-727a-4f56-b647-79ef69311f61",
+        "reference" : "90c59073-bc42-4796-a4e5-c0048c9fb788",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -52,13 +51,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
                 }
               },
-              "reference" : "32ece9a6-832e-4511-b5d9-e66674d9b5d8",
+              "reference" : "57461f32-547f-4462-baf4-9954fd22edda",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -106,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d627b4d0-0464-408a-8696-1504f0acd9f8",
+              "reference" : "e9508d90-bd31-443f-aee8-895205a8f2f2",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -122,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "4d809fb1-7322-44f7-b95b-8b70f1cab9eb",
+        "reference" : "c42ae294-6671-4bb1-aa47-74b674c2cd94",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -131,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "6821a8f6-864e-4fc9-8dec-15367b357f92",
+          "reference" : "936fe0c7-7d2c-4100-a477-da51cfdfab04",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -161,7 +156,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "89eb713c-3288-4b7b-9ef7-56a233072d43",
+                "reference" : "68a5b261-c935-41b2-96f2-b0ed2114efea",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -175,6 +170,74 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Documento plano de testes"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.docPlanoTestesDocumentInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "970b176b-86cf-4c4b-8189-d2286d8a7e50",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
@@ -183,33 +246,17 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHTML" : {
                           "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Identificação de recursos da empresa ao projeto"
+                          "value" : "Default label"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -217,16 +264,20 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : 4
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.projetoInput.recursosProjeto"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Documento deve incluir:\n<ul>\n  <li>Identificação dos utlizadores que acompanharam os testes</li>\n  <li>Datas da realização</li>\n  <li>Resultados e eventuais observações</li>\n  <li>Validação por parte do cliente</li>\n  <li>Identificação única para cada situação</li>\n  <li>Estado da análise ou resolução</li>\n  <li>Layouts impressos ou consultados</li>\n</ul>"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         }
                       },
-                      "reference" : "6850103c-253a-4605-8a19-04fcea985334",
+                      "reference" : "8819e3c2-40a0-4318-be1a-7292fb458f08",
                       "hasValidationError" : false,
-                      "id" : "pbTextarea"
+                      "id" : "pbText"
                     }
                   ]
                 ]
@@ -328,7 +379,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "fc13719f-82a2-4d61-aaca-25509f6cdd16",
+                "reference" : "bacdeb81-100b-4b00-b434-099cd41e49e9",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -378,17 +429,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "5f05d2a4-e2f1-496b-8850-1ecf77033ab3",
+                "reference" : "ad4612ce-a732-4595-887e-3ce5015f72e6",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -411,9 +454,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"projetoInput\" : {\r",
-        "    \"recursosProjeto\" : \"\"\r",
-        "  }\r",
+        "  \"docPlanoTestesDocumentInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -437,7 +478,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tprojetoInput: $data.formInput.projetoInput",
+        "\tdocPlanoTestesDocumentInput: $data.formInput.docPlanoTestesDocumentInput",
         "}"
       ],
       "exposed" : false
@@ -459,14 +500,14 @@
   },
   "assets" : [
     {
-      "id" : "b05342b0-a9d1-4981-98d4-ee76086d00ec",
+      "id" : "e1ab34b6-55a4-42a9-98e4-6f54faf4b1e9",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "80f8756e-b119-4a3e-abca-76756326241e",
+      "id" : "7ad7d1ed-a0a0-497b-a1ae-1aba89a698ae",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

@@ -1,11 +1,10 @@
 {
-  "id" : "recursosEmpresaFORM",
-  "name" : "recursosEmpresaFORM",
+  "id" : "newForm26",
+  "name" : "newForm26",
   "type" : "form",
-  "uuid" : "965cbba4-a5e8-43cc-8b37-7344ef58aee0",
+  "uuid" : "90855cb1-a9a0-479c-ae6e-54f1b9baecf8",
   "modelVersion" : "2.4",
-  "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686658781758,
+  "lastUpdate" : 1686662517132,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -15,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6b3486a8-727a-4f56-b647-79ef69311f61",
+        "reference" : "7d3165e9-8fe4-45ad-b3cb-d94a7e3ecf4f",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -52,13 +51,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
                 }
               },
-              "reference" : "32ece9a6-832e-4511-b5d9-e66674d9b5d8",
+              "reference" : "8b8b9a86-1729-4e96-a892-986ee0012c8c",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -106,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d627b4d0-0464-408a-8696-1504f0acd9f8",
+              "reference" : "a24b3a4c-405d-48f1-9dbf-4cebf7254c77",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -122,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "4d809fb1-7322-44f7-b95b-8b70f1cab9eb",
+        "reference" : "8b5306a4-46c0-4b83-94f6-2911dab65819",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -131,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "6821a8f6-864e-4fc9-8dec-15367b357f92",
+          "reference" : "8ad24231-0048-44cc-99d0-15dc73c70f2a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -161,7 +156,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "89eb713c-3288-4b7b-9ef7-56a233072d43",
+                "reference" : "3ead1e48-c6cd-4c3b-b4d1-1bde699b35c2",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -175,58 +170,55 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Identificação de recursos da empresa ao projeto"
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ata Reuniao"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.projetoInput.recursosProjeto"
+                          "value" : "formInput.ataReuniaoDocumentInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
                         }
                       },
-                      "reference" : "6850103c-253a-4605-8a19-04fcea985334",
+                      "reference" : "33a45b10-6f82-462e-9d08-5fcebf6baaca",
                       "hasValidationError" : false,
-                      "id" : "pbTextarea"
+                      "id" : "pbUpload",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -305,30 +297,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "fc13719f-82a2-4d61-aaca-25509f6cdd16",
+                "reference" : "45c6fde7-8880-48f7-b318-b1e0f3ef81be",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -378,17 +349,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "5f05d2a4-e2f1-496b-8850-1ecf77033ab3",
+                "reference" : "e6e75d9c-ae3d-4bf8-8934-0c3925827061",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -411,9 +374,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"projetoInput\" : {\r",
-        "    \"recursosProjeto\" : \"\"\r",
-        "  }\r",
+        "  \"ataReuniaoDocumentInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -437,7 +398,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tprojetoInput: $data.formInput.projetoInput",
+        "\tataReuniaoDocumentInput: $data.formInput.ataReuniaoDocumentInput",
         "}"
       ],
       "exposed" : false
@@ -459,16 +420,16 @@
   },
   "assets" : [
     {
-      "id" : "b05342b0-a9d1-4981-98d4-ee76086d00ec",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "068535db-1b88-44d5-8f9e-3a28d6da24aa",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "80f8756e-b119-4a3e-abca-76756326241e",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "a8447ecd-b153-4d3e-a3a8-b60fc4580c81",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }

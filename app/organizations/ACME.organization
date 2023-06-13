@@ -679,7 +679,7 @@
     </membership>
     <membership>
       <userName>jan.fisher</userName>
-      <roleName>Client</roleName>
+      <roleName>member</roleName>
       <groupName>it</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>

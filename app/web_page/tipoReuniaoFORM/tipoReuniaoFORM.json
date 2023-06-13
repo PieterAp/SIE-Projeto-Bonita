@@ -5,7 +5,7 @@
   "uuid" : "a04e7a06-4422-4f0b-ad04-7cb7b63ced53",
   "modelVersion" : "2.4",
   "previousArtifactVersion" : "2.3",
-  "lastUpdate" : 1686518130167,
+  "lastUpdate" : 1686659210765,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -176,7 +176,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Tipo Reuniao"
+                    "value" : "Tipo de reunião a realizar com o cliente:"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -192,6 +192,7 @@
                   "availableValues" : {
                     "type" : "constant",
                     "value" : [
+                      "Não realizar reunião",
                       "Presencial",
                       "Email",
                       "Telefónico"

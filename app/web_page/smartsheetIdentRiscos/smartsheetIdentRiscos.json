@@ -1,10 +1,10 @@
 {
-  "id" : "planoTestes",
-  "name" : "planoTestes",
+  "id" : "smartsheetIdentRiscos",
+  "name" : "smartsheetIdentRiscos",
   "type" : "form",
-  "uuid" : "a4e2a980-fcd5-4b0f-bcd8-d280e10f60fb",
+  "uuid" : "609c32e4-ca25-49c2-855e-24748ea32f46",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686617191698,
+  "lastUpdate" : 1686662221981,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "692800d9-7ccf-41fd-a2bd-07fdf43a17ef",
+        "reference" : "d14f360c-0184-48c0-861e-b446762859b1",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "ba44c4d6-36fc-4dd8-b499-66d17c5bd2d2",
+              "reference" : "5ccd9a35-fc16-47e6-b9be-aa5227f7c28d",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7a17336e-ec6a-470a-b955-db26121e9640",
+              "reference" : "7f52cee3-fcd7-4ba0-989f-9342be3d9b24",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "5774c6b0-8465-48d8-8a39-6aa325fa0964",
+        "reference" : "4be770ab-ddef-448c-9fd9-b96206c20563",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,13 +126,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5279f3a9-c869-486f-82ea-4535845415f6",
+          "reference" : "478a0018-78f2-430f-a611-0eeb58584b31",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -140,9 +140,8 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -152,35 +151,84 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Plano de testes aprovado?"
-                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.planoTestes2"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "b967a2ff-bf02-46d5-b54f-2588a37469c6",
+                "reference" : "360e2eb1-18e7-480b-9322-dea99c6f4d1c",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fazer upload re smartsheet com identificação de riscos:"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.resumoReuniaoEmailTelDocumentInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "add6beb3-54de-4d0e-9f98-8e1a068e9532",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -258,7 +306,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "14310f0f-edf7-48bb-9b78-83d0572f6db8",
+                "reference" : "d501949e-5e97-4422-97a9-ee940a94d6a0",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -310,7 +358,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ccf8a1b3-d750-4f8a-9e73-5b9b3141e15c",
+                "reference" : "ee330772-a196-45e8-8367-0590581cf896",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -333,7 +381,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"planoTestes2\" : false\r",
+        "  \"resumoReuniaoEmailTelDocumentInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -357,7 +405,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tplanoTestes2: $data.formInput.planoTestes2",
+        "\tresumoReuniaoEmailTelDocumentInput: $data.formInput.resumoReuniaoEmailTelDocumentInput",
         "}"
       ],
       "exposed" : false
@@ -379,14 +427,14 @@
   },
   "assets" : [
     {
-      "id" : "0dfd502c-b5c3-442d-9073-6af3e63331ea",
+      "id" : "47bae294-d639-4351-88e6-22690eec6242",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "a9d1c05a-3767-40d7-bc14-626021dc82dc",
+      "id" : "857d57fe-c4c9-4a8e-8bcb-57fc23e9dda8",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
