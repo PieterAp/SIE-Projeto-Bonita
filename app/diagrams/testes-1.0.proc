@@ -355,7 +355,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_78m4kAnWEe6-OJ1qbTi2_g" name="outros" target="_3sbc0AnWEe6-OJ1qbTi2_g" source="_y6Vm0AnWEe6-OJ1qbTi2_g">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_78nfoAnWEe6-OJ1qbTi2_g"/>
         <condition xmi:type="expression:Expression" xmi:id="_78nfoQnWEe6-OJ1qbTi2_g" name="newScript()" content="projeto.tipo != &quot;A&quot; &amp;&amp; projeto.tipo != &quot;B&quot; &amp;&amp; projeto.tipo != &quot;C&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nwa0oAntEe6-OJ1qbTi2_g" name="projeto" dataType="_8YgAeAmAEe6KaPkYZxzxug" className="com.company.model.Projecto"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kzKWgAozEe6Dcrqzid1-og" name="projeto" dataType="_8YgAeAmAEe6KaPkYZxzxug" className="com.company.model.Projecto"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_gtEJ0AnxEe6ig6VsTwrLyw" name="Não" target="_8dE-cAmAEe6KaPkYZxzxug" source="_8dJ28AmAEe6KaPkYZxzxug">
