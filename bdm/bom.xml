@@ -11,7 +11,7 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Produtivo">
             <fields>
-                <field type="BOOLEAN" length="255" name="arranueModulos" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="arranqueModulos" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="plano" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
